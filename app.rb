@@ -6,7 +6,7 @@ include SendGrid
 
 
 
-sg = SendGrid::API.new(api_key: ENV["SENDGRID"])
+
 
 
 get "/" do
@@ -16,14 +16,14 @@ end
 
 
 post "/" do
-puts params[:name], ENV["SENDGRID"]
-to = Email.new(email: params[:email])
+sg = SendGrid::API.new(api_key: ENV["SENDGRID"])
+to = Email.new(email: params[:email]_to.s)
 from = Email.new(email: 'scottsutrisno@gmail.com')
 subject = params[:name]
-content = Content.new(type: 'text/plain', value: params[:comment])
+content = Content.new(type: 'text/plain', value: 'Thanks for your input! Heres a list of all our edibles!')
 mail = Mail.new(from, subject, to, content)
 response = sg.client.mail._('send').post(request_body: mail.to_json)
-
+puts params[:name], ENV["SENDGRID"]
 puts response.status_code
 puts response.body
 # puts response.parsed_body
