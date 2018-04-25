@@ -27,3 +27,9 @@ nav a:hover {
 nav ul {
     margin: auto;
 }
+
+img {
+    width: 50%;
+    height: 400px;
+    margin: 0px 0px 0px 300px
+}
