@@ -1,10 +1,10 @@
 nav {
     width: 100%;
     overflow: auto;
-    background-color: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3U7SpV1OtmTjG1hiGS20KYWEcBQZ2anpednFD1RZnMAOAlFc")
 }
 
-li {
+ul {
     float: right;
     list-style: none;
 }
@@ -16,20 +16,109 @@ nav a {
     font-size: 30px;
     color: white;
     width: 150px;
-    padding-top: 50px;
 }
 
 nav a:hover {
-    color: black;
+    color: #EEA8A8;
+}
+
+nav li:hover {
     background-color: white;
 }
 
-nav ul {
-    margin: auto;
+.headerimg {
+    width: 33%;
+    float: left;
 }
 
-img {
-    width: 50%;
+.headerimg2 {
+    width: 33%;
+    float: right;
+}
+
+.headerimg3 {
+    width: 33%;
+    float: right;
+    margin-right: 7.5px;
+}
+
+.logo {
+    margin-left: 75px;
+    bottom: 430px;
+    width: 24%;
+    position: absolute;
+    overflow: hidden;
     height: 400px;
-    margin: 0px 0px 0px 300px
+    z-index: 5;
+}
+
+.headerimgblk {
+    width: 34%;
+    position: absolute;
+    overflow: hidden;
+    height: 268px;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+body {
+    background-color: #fee8ff;
+    background-image: url("http://vmi9fzqs9bpz4q8f.zippykid.netdna-cdn.com/wp-content/uploads/2010/07/cupcakes_desktop.jpg");
+    background-size: 1400px 1000px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 0px;
+    width: 150px;
+    height: 35px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: #EEA8A8;
+}
+
+.btn:link {
+    background-color: transparent;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 56px;
+    font-family: cursive;
+}
+
+.dropdown1 ul {
+    color: #EEA8A8;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: #EEA8A8;
+}
+
+.parallax-container {
+    height: 655px;
+}
+
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+    width: 70%;
+    margin-left: 220px;
 }
