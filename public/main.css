@@ -1,6 +1,8 @@
 nav {
+    height: 75px;
     width: 100%;
     overflow: auto;
+    box-shadow: 8px 8px 8px black;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3U7SpV1OtmTjG1hiGS20KYWEcBQZ2anpednFD1RZnMAOAlFc")
 }
 
@@ -16,6 +18,8 @@ nav a {
     font-size: 30px;
     color: white;
     width: 150px;
+    height: 100px;
+    ;
 }
 
 nav a:hover {
@@ -29,36 +33,30 @@ nav li:hover {
 .headerimg {
     width: 33%;
     float: left;
+    border: solid white 2px;
 }
 
 .headerimg2 {
     width: 33%;
     float: right;
+    border: solid white 2px;
 }
 
 .headerimg3 {
     width: 33%;
     float: right;
     margin-right: 7.5px;
+    border: solid white 2px;
 }
 
 .logo {
     margin-left: 75px;
-    bottom: 490px;
+    bottom: 420px;
     width: 24%;
     position: absolute;
     overflow: hidden;
     height: 400px;
     z-index: 5;
-}
-
-.headerimgblk {
-    width: 34%;
-    position: absolute;
-    overflow: hidden;
-    height: 268px;
-    opacity: 0.6;
-    z-index: 2;
 }
 
 body {
@@ -72,7 +70,8 @@ body {
     border: none;
     box-shadow: 0px 0px 0px;
     width: 150px;
-    height: 35px;
+    height: 100px;
+    padding-top: 16px;
 }
 
 .btn:hover {
@@ -104,7 +103,8 @@ h1 {
 }
 
 .parallax-container {
-    height: 655px;
+    height: 550px;
+    border: solid white 2px;
 }
 
 input:not([type]),
@@ -124,6 +124,7 @@ input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
     width: 40%;
     margin: 100px 0px 0px 430px;
+    box-shadow: 3px 3px 3px black;
 }
 
 input:not([type]),
@@ -151,13 +152,26 @@ textarea.materialize-textarea {
 button,
 input {
     margin-left: 50px;
+    width: 150px;
+    box-shadow: 3px 3px 3px black;
 }
 
 .summary {
     width: 70%;
-    height: 375px;
+    height: 400px;
     text-align: center;
     padding-top: 10px;
+    color: white;
+    font-family: cursive;
+    font-size: 22px;
+    margin: 0 auto;
+}
+
+h4 {
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    padding-top: 5px;
     color: white;
     font-family: cursive;
     font-size: 22px;
