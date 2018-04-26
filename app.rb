@@ -76,6 +76,7 @@ end
 
 get "/thankyou" do
 erb :thankyou
+
 end
 
 get "/cookies" do

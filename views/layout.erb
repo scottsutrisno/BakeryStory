@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <%= yield_content :some_key %>
    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="icon" sizes="16x16" href="https://i.pinimg.com/originals/18/c6/67/18c6679f9e4d88b99c966a4255c2161a.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -52,7 +53,7 @@
 <footer>
     <nav>
         <ul>
-          <li><a id="top-btn" href="#headerimg">Back To Top</a></li>
+          <li><button id="top-btn" href="#headerimg">Back To Top</button></li>
         </ul>
     </nav>
 </footer>
