@@ -107,6 +107,8 @@ h1 {
 }
 
 input:not([type]),
+/* form field */
+
 input[type=text]:not(.browser-default),
 input[type=password]:not(.browser-default),
 input[type=email]:not(.browser-default),
@@ -121,4 +123,38 @@ input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
     width: 70%;
     margin-left: 220px;
+}
+
+input:not([type]),
+/* form field */
+
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+    color: black;
+    border-bottom: 2px solid black;
+    background-color: beige;
+}
+
+button,
+/* submit button */
+
+input {
+    margin-left: 50px;
+}
+
+.summary {
+    width: 100%;
+    height: 375px;
+    text-align: center;
+    padding-top: 100px;
 }
