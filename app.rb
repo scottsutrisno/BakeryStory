@@ -16,7 +16,7 @@ to = Email.new(email: params[:email])
 subject = 'Edible Catalog'
 content = Content.new(type: 'text/html', value:
 
-    "<p><strong><u>Congratulations, you have subscribed to Edibleland's Catalog.</u></strong></p>
+    "<p><strong><u>Hey #{params[:name]}, thank you for subscribing to Edibleland's Catalog.</u></strong></p>
     <br>
     <br>
     <br>
