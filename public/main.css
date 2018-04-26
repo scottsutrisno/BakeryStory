@@ -29,7 +29,7 @@ nav li:hover {
     background-color: white;
 }
 
-.headerimg {
+#headerimg {
     width: 33%;
     float: left;
     border: solid white 2px;
