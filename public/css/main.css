@@ -3,7 +3,7 @@ nav {
     width: 100%;
     overflow: auto;
     box-shadow: 8px 8px 8px black;
-    background-image: url("images/chocnav.jpg")
+    background-image: url("../images/chocnav.jpg")
 }
 
 ul {
@@ -76,7 +76,7 @@ header nav li:hover {
 
 body {
     background-color: #fee8ff;
-    background-image: url("http://vmi9fzqs9bpz4q8f.zippykid.netdna-cdn.com/wp-content/uploads/2010/07/cupcakes_desktop.jpg");
+    background-image: url("../images/cupBG.jpg");
     background-size: 1850px 1450px;
 }
 
@@ -219,4 +219,8 @@ h3 {
     font-size: 20px;
     width: 800px;
     margin: auto;
+}
+
+#userform {
+    height: 400px;
 }

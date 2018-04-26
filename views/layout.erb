@@ -5,25 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <%= yield_content :redirector %>
-   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="icon" sizes="16x16" href="https://i.pinimg.com/originals/18/c6/67/18c6679f9e4d88b99c966a4255c2161a.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet"type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="icon" sizes="16x16" href="https://i.pinimg.com/originals/18/c6/67/18c6679f9e4d88b99c966a4255c2161a.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"type="text/css" href="../css/main.css">
   <title>Bakery Story</title>
 </head>
 
+
 <body>
-<header>
+  <header>
 
-<img id="headerimg" src="images/muff.jpg">
-
-
-<img class="headerimg2" src="images/cookie.jpg">
+    <img id="headerimg" src="images/muff.jpg">
 
 
-<img class="headerimg3" src="images/cake.jpg">
-<img class="logo" src="images/logo.png">
+    <img class="headerimg2" src="images/cookie.jpg">
+
+
+    <img class="headerimg3" src="images/cake.jpg">
+    <img class="logo" src="images/logo.png">
 
 
     <nav>
@@ -34,31 +35,33 @@
         </ul>
     </nav>
 
-   <!-- Dropdown Structure -->``
-  <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="/cookies"><i class="material-icons">insert_emoticon</i>Cookies</a></li>
-    <li><a href="/cakes"><i class="material-icons">cake</i>Cakes</a></li>
-    <li><a href="/muffins"><i class="material-icons">cloud</i>Muffins</a></li>
-  </ul>
+
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="/cookies"><i class="material-icons">insert_emoticon</i>Cookies</a></li>
+      <li><a href="/cakes"><i class="material-icons">cake</i>Cakes</a></li>
+      <li><a href="/muffins"><i class="material-icons">cloud</i>Muffins</a></li>
+    </ul>
 
 
 
 
 
 
-</header>
+  </header>
+
+
   <%= yield %>
 
 
-<footer>
-    <nav>
-        <ul>
-          <li><button id="top-btn" href="#headerimg">Back To Top</button></li>
-        </ul>
-    </nav>
-</footer>
+  <footer>
+      <nav>
+          <ul>
+            <li><button id="top-btn" href="#headerimg">Back To Top</button></li>
+          </ul>
+      </nav>
+  </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
