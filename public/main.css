@@ -91,6 +91,7 @@ h1 {
     color: white;
     font-size: 56px;
     font-family: cursive;
+    text-decoration: underline;
 }
 
 .dropdown1 ul {
@@ -121,8 +122,8 @@ input[type=tel]:not(.browser-default),
 input[type=number]:not(.browser-default),
 input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
-    width: 70%;
-    margin-left: 220px;
+    width: 40%;
+    margin: 100px 0px 0px 430px;
 }
 
 input:not([type]),
@@ -145,16 +146,20 @@ textarea.materialize-textarea {
     background-color: beige;
 }
 
-button,
 /* submit button */
 
+button,
 input {
     margin-left: 50px;
 }
 
 .summary {
-    width: 100%;
+    width: 70%;
     height: 375px;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 10px;
+    color: white;
+    font-family: cursive;
+    font-size: 22px;
+    margin: 0 auto;
 }

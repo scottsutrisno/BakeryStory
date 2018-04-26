@@ -1,5 +1,5 @@
 require 'sinatra'
-# require 'sinatra/reloader'
+require 'sinatra/reloader'
 require 'sendgrid-ruby'
 include SendGrid
 
@@ -15,11 +15,11 @@ end
 
 
 post "/" do
-
+comment = ", Thanks for signing up for our catalog! Heres a list of all our tasty edibles"
 from = Email.new(email: 'scottsutrisno@gmail.com')
-to = Email.new(email: "'" + params[:email] + "'")
-subject = params[:name]
-content = Content.new(type: 'text/plain', value: 'Thanks for your input! Heres a list of all our edibles:')
+to = Email.new(email: params[:email])
+subject = 'Edible Catalog'
+content = Content.new(type: 'text/plain', value: "Hey " + params[:name] + comment)
 mail = Mail.new(from, subject, to, content)
 sg = SendGrid::API.new(api_key: ENV["SENDGRID"])
 response = sg.client.mail._('send').post(request_body: mail.to_json)
