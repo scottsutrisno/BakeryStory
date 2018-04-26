@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'sendgrid-ruby'
+require 'sinatra/content_for'
 include SendGrid
 
 

@@ -8,8 +8,6 @@ M.AutoInit();
 
 
 
-
-
 let topBtn = document.querySelector('#top-btn');
 
 topBtn.addEventListener('click', (event) => {
